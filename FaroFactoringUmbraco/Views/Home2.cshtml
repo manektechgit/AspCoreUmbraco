@@ -1,0 +1,21 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home2>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Main.cshtml";
+}
+@await Html.PartialAsync("Header")
+<div class="wrapper wrp-hero">
+	<img src="https://gibsonads.com/gibsondevelopment/faro-factoring/wp-content/uploads/2021/06/shutterstock_1437086084.png" alt="Who we are" title="Who we are">
+	<div class="hero-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">                       
+					<h2>@Model.Value("header2")</h2>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+@await Html.PartialAsync("SubHome2")
+@await Html.PartialAsync("Footer")

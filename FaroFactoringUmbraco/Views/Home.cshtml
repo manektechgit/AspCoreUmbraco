@@ -1,0 +1,63 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Main.cshtml";
+}
+@await Html.PartialAsync("Header")
+<div class="wrapper wrp-hero">
+	<img src="https://gibsonads.com/gibsondevelopment/faro-factoring/wp-content/uploads/2021/06/shutterstock_1487571929.png" alt="Home" title="Home">
+	<div class="hero-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">                       
+					<h2>FARO FACTORING PUTS<br>
+YOU IN THE DRIVERS SEAT</h2>
+											<a class="contact-expert" href="#contact" title="CONTACT A FACTORING EXPERT">CONTACT A FACTORING EXPERT</a>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+@await Html.PartialAsync("SubHome")
+<div class="wrapper wrp-what">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 site-main-tit">
+                    <h2>We specialize in Factoring for Small to Medium Transportation Companies</h2>
+                </div>
+            </div>
+            <div class="row">
+                                            <div class="col-12 outer-what">
+                                <h2><span>1</span>Factoring Servcies Tailored to Your Needs</h2>
+                                <div class="what-desc">
+                                    <ul>
+<li>Recourse</li>
+<li>Non-Recourse</li>
+</ul>
+                                </div>
+                            </div>
+                                                        <div class="col-12 outer-what">
+                                <h2><span>2</span>Easy Payment Options</h2>
+                                <div class="what-desc">
+                                    <ul>
+<li>Get paid same day or within 24 hours of submitting paperwork via ACH or wire transfer</li>
+</ul>
+                                </div>
+                            </div>
+                                                        <div class="col-12 outer-what">
+                                <h2><span>3</span>Fuel Card Program Accepted at 95% of U.S. Gas Stations</h2>
+                                <div class="what-desc">
+                                    <ul>
+<li>Fuel Savings</li>
+<li>Exclusive Discounts</li>
+</ul>
+<p>&nbsp;</p>
+<p>* Insurance programs through Beacon Insurance Group</p>
+                                </div>
+                            </div>
+                                        </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("RequestForm")
+@await Html.PartialAsync("Footer")    

@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<header>
+	<div class="wrapper wrp-topbar">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 align-self-center">
+					<div class="topbar-outer">
+						<ul>
+															<li>
+									<img src="https://gibsonads.com/gibsondevelopment/faro-factoring/wp-content/themes/faro/images/address.png" alt="" title="">
+									<p><a href="javascript:void(0)" title="108 DEL COURT, SUITE 3, LAREDO, TX 78041">@Model.Value("address")</a></p>
+								</li>
+																						<li>
+									<img src="https://gibsonads.com/gibsondevelopment/faro-factoring/wp-content/themes/faro/images/phone.png" alt="" title="">
+									<p><a href="tel:956.568.1190" title="956.568.1190">@Model.Value("mobile")</a></p>
+								</li>
+													</ul>
+						<ul class="header-social">								
+								</ul>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper wrp-header">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 logo-section align-self-center">
+					<a href="/home" title="FARO Factoring">
+						<img src="https://gibsonads.com/gibsondevelopment/faro-factoring/wp-content/uploads/2021/06/Vector-Smart-Object3.png" alt="FARO Factoring" title="FARO Factoring">
+					</a>
+				</div>
+				<div class="col-12 col-sm-12 col-md-7 col-lg-7 primary-menu align-self-center">
+					<nav id="cssmenu">
+						<label class="d-none">Menu</label>
+						<div class="button"></div>
+							<ul id="menu-header-menu" class=""><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-31 active "><a href="/home" aria-current="page">@Model.Value("header1")</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="/home2">@Model.Value("header2")</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="/contactus/">@Model.Value("header3")</a></li>
+</ul>					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
